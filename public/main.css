@@ -1,0 +1,308 @@
+@font-face {
+  font-family: trade-gothic;
+  src: url(/font/Trade-Gothic-LT.ttf);
+}
+
+@font-face {
+  font-family: trade-gothic-bold;
+  src: url(/font/Trade-Gothic-LT-Bold.ttf);
+}
+
+@font-face {
+  font-family: trade-gothic-bold-condensed;
+  src: url(/font/Trade-Gothic-LT-Bold-Condensed.ttf);
+}
+
+@font-face {
+  font-family: trade-gothic-light;
+  src: url(/font/Trade-Gothic-LT-Light.ttf);
+}
+
+@font-face {
+  font-family: trade-gothic-light-oblique;
+  src: url(/font/Trade-Gothic-LT-Light-Oblique.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 100px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.header__logo {
+  height: 100%;
+  cursor: pointer;
+}
+
+.header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__ul__li {
+  font-family: trade-gothic-bold-condensed;
+  color: black;
+  list-style-type: none;
+  padding-left: 100px;
+  cursor: pointer;
+}
+
+main {
+  padding: 0 100px;
+}
+
+main h1 {
+  font-family: trade-gothic-bold-condensed;
+  color: black;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+main .filter-container {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .filter-container__price__title {
+  font-family: trade-gothic-bold-condensed;
+  color: black;
+  margin-bottom: 15px;
+}
+
+main .filter-container__price__range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  background: black;
+  outline: none;
+}
+
+main .filter-container__price__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: black;
+  cursor: pointer;
+}
+
+main .filter-container__color__title {
+  font-family: trade-gothic-bold-condensed;
+  color: black;
+  margin-bottom: 15px;
+}
+
+main .filter-container__color__button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  margin: 4px 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+main .filter-container__color .button1 {
+  background-color: black;
+}
+
+main .filter-container__color .button2 {
+  background-color: #c1c5c8;
+}
+
+main .filter-container__color .button3 {
+  background-color: #dbaa1d;
+}
+
+main .filter-container__color .button4 {
+  background-color: #5b232e;
+}
+
+main .filter-container__color .button5 {
+  background-color: #ff3b3b;
+}
+
+main .filter-container__collection__title {
+  font-family: trade-gothic-bold-condensed;
+  color: black;
+  margin-bottom: 15px;
+}
+
+main .filter-container__collection__checkbox {
+  background-color: transparent;
+}
+
+.product-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product-container__product {
+  width: 20%;
+  height: auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 19%;
+          flex: 0 0 19%;
+}
+
+.product-container__product__img {
+  width: 100%;
+}
+
+.product-container__product__color {
+  width: 15px;
+  height: 15px;
+  border: none;
+  margin: 4px 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.product-container__product__title {
+  font-family: trade-gothic-bold-condensed;
+  font-size: 17px;
+  color: black;
+  margin-left: 5px;
+}
+
+.product-container__product__category {
+  font-family: trade-gothic;
+  color: #777777;
+  font-size: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.product-container__product__price {
+  font-family: trade-gothic-bold-condensed;
+  font-size: 17px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.product-container__product:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.general .image-container {
+  width: 50vw;
+  height: calc(100vh - 65px);
+}
+
+.general .image-container__img {
+  width: 100%;
+  height: 100%;
+}
+
+.general .description-container {
+  width: 50vw;
+  height: calc(100vh - 65px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.general .description-container__wrap {
+  width: 70%;
+}
+
+.general .description-container__wrap__title {
+  font-family: trade-gothic-bold-condensed;
+  font-size: 40pt;
+  color: black;
+  line-height: 50px;
+}
+
+.general .description-container__wrap__price {
+  font-family: trade-gothic;
+  color: black;
+  font-size: 21pt;
+  margin: 20px 0;
+}
+
+.general .description-container__wrap__description {
+  font-family: trade-gothic;
+  color: black;
+  font-size: 12pt;
+  margin-bottom: 20px;
+}
+
+.general .description-container__wrap__button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: trade-gothic-bold-condensed;
+  font-size: 21pt;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

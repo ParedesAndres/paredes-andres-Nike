@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/main.css" />
+    <link rel="icon" href="/img/nike-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    {{>nav}}
+
+    <div class="general">
+        <section class="image-container">
+            <img class="image-container__img" src="{{img}}" alt="image">
+
+        </section>
+
+        <section class="description-container">
+            <article class="description-container__wrap">
+                <h1 class="description-container__wrap__title">{{title}}</h1>
+                <p class="description-container__wrap__price">$239.90</p>
+                <p class="description-container__wrap__description">The Nike Phantom Vision Elite Dynamic Ground
+                    Soccer Cleat gives you an unrivaled fit and excellent
+                    cleat-to-ball connection. It’s built for players who need
+                    precision and control on the field.</p>
+
+                <button class="description-container__wrap__button">ADD TO CART</button>
+            </article>
+        </section>
+
+    </div>
+</body>
+
+</html>

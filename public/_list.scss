@@ -1,0 +1,58 @@
+.product-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+
+    &__product {
+        width: 20%;
+        height: auto;
+        
+        flex: 0 0 19%;
+
+        &__img {
+            width: 100%;
+        }
+
+        &__color {
+            width: 15px;
+            height: 15px;
+            border: none;
+            margin: 4px 5px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: black
+        }
+
+        &__title {
+            font-family: trade-gothic-bold-condensed;
+            font-size: 17px;
+            color: black;
+            margin-left: 5px;
+        }
+
+        &__category {
+            font-family: trade-gothic;
+            color: #777777;
+            font-size: 10px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        &__price {
+            font-family: trade-gothic-bold-condensed;
+            font-size: 17px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+        }
+    }
+
+    &__product:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,29 @@
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+
+    &__logo {
+        height: 100%;
+        cursor: pointer;
+    }
+
+    &__ul {
+        display: flex;
+
+        &__li {
+            font-family: trade-gothic-bold-condensed;
+            color: black;
+            list-style-type: none;
+            padding-left: 100px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <link rel="icon" href="/img/nike-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    {{>nav}}
+
+    <main>
+
+        <h1>FILTERS</h1>
+
+        <hr>
+
+        <section class="filter-container">
+            <section class="filter-container__price">
+                <p class="filter-container__price__title">PRICE</p>
+                <input type="range" id="price" min="190" max="390" class="filter-container__price__range">
+            </section>
+
+            <section class="filter-container__color">
+                <p class="filter-container__color__title">COLOR</p>
+                <button class="filter-container__color__button button1"></button>
+                <button class="filter-container__color__button button2"></button>
+                <button class="filter-container__color__button button3"></button>
+                <button class="filter-container__color__button button4"></button>
+                <button class="filter-container__color__button button5"></button>
+            </section>
+
+            <section class="filter-container__collection">
+                <p class="filter-container__collection__title">COLLECTIONS</p>
+                <input class="filter-container__collection__checkbox" type="checkbox" id="Mercurial">
+                <label for="Mercurial">Mercurial</label>
+
+                <input type="checkbox" id="Academy">
+                <label for="Academy">Academy</label>
+            </section>
+        </section>
+
+        <section class="product-container">
+            {{#each boots}}
+                <article class="product-container__product">
+                    <img class="product-container__product__img" src="{{img}}" alt="image">
+                    <button class="product-container__product__color" style="background: {{color}}"></button>
+                    <hr>
+                    <a href="/store/{{name}}"><h3 class="product-container__product__title">{{name}}</h3></a>
+                    <p class="product-container__product__category">{{collection}}</p>
+                    <p class="product-container__product__price">{{price}}</p>
+                </article>
+            {{/each}}
+        </section>
+
+    </main>
+
+
+
+    <footer></footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+//fonts
+@font-face {
+    font-family: trade-gothic;
+    src: url(/font/Trade-Gothic-LT.ttf);
+}
+
+@font-face {
+    font-family: trade-gothic-bold;
+    src: url(/font/Trade-Gothic-LT-Bold.ttf);
+}
+
+@font-face {
+    font-family: trade-gothic-bold-condensed;
+    src: url(/font/Trade-Gothic-LT-Bold-Condensed.ttf);
+}
+
+@font-face {
+    font-family: trade-gothic-light;
+    src: url(/font/Trade-Gothic-LT-Light.ttf);
+}
+
+@font-face {
+    font-family: trade-gothic-light-oblique;
+    src: url(/font/Trade-Gothic-LT-Light-Oblique.ttf);
+}
+
+
+$font-size-nav: 15pt;
+
+$margin-left: 100px;
+$margin-right: 100px;
+$padding-left: 100px;
+$padding-right: 100px;
