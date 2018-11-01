@@ -1,0 +1,41 @@
+.news {
+    background-image: url(../images/news-images.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container{
+        
+        padding: 60px 0;
+
+        &__title{
+            font-family: trade-gothic-bold-condensed;
+            font-size: $title-size;
+            text-align: center;
+            color: $color-secondary;
+            display: block;
+        }
+
+        &__wrap{
+            font-size: 0;
+            margin-top: 25px;
+            &__input{
+                font-family: trade-gothic-bold-condensed;
+                font-size: $text-size-button;
+                padding: 18px 30px 18px 30px;
+            }
+    
+            &__button{
+                font-family: trade-gothic-bold-condensed;
+                font-size: $text-size-button;
+                padding: 20px 30px 20px 30px;
+                color: $color-secondary;
+                background-color: $color-primary;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

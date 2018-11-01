@@ -1,0 +1,36 @@
+.specification {
+    background-color: $color-primary;
+    width: $screen-width;
+    height: $screen-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 600px;
+        margin: auto;
+
+        &__info {
+            font-family: trade-gothic-light;
+            font-size: $text-size-description;
+            color: $color-secondary;
+            margin-bottom: 50px;
+        }
+
+        &__button {
+            font-family: trade-gothic-bold-condensed;
+            font-size: $text-size-button;
+            padding: 20px 80px 20px 80px;
+            color: $color-primary;
+            background-color: $acent-color;
+            border: none;
+            cursor: pointer;
+        }
+
+        &__button:hover{
+            background-color: $color-secondary;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+            transition: 1s;
+        }
+    }
+}

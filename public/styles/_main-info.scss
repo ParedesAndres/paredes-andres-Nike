@@ -1,0 +1,89 @@
+.phrase {
+    background-color: $background-color;
+    padding-bottom: $padding-phrase;
+    padding-top: $padding-phrase;
+
+    &__container {
+        width: 70%;
+        font-size: 20px;
+        margin: 100px auto;
+        text-align: center;
+    }
+
+    &__title{
+        font-family: trade-gothic-bold-condensed;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    &__author {
+        font-family: trade-gothic-light-oblique;
+        font-size: $text-size;
+        margin-top: 25px; 
+    }
+}
+
+
+main {
+    background-color: $background-color;
+
+    .first-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: $screen-width;
+        height: $screen-height;
+
+        &__image {
+            height: 100%;
+        }
+
+        &__container {
+            width: 400px;
+            padding: 0 100px 0 0;
+            background-color: $background-color;
+
+            &__title {
+                font-family: trade-gothic-bold-condensed;
+                font-size: $title-size;
+            }
+
+            &__info {
+                font-family: trade-gothic-light;
+                font-size: $text-size-description;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .second-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: $screen-width;
+        height:$screen-height;
+
+        .second-description__image {
+            height: 100%;
+        }
+
+        &__container {
+            width: 400px;
+            padding: 0 0 0 100px;
+            background-color: $background-color;
+
+            &__title {
+                font-family: trade-gothic-bold-condensed;
+                font-size: $title-size;
+            }
+
+            &__info {
+                font-family: trade-gothic-light;
+                font-size: $text-size-description;
+                margin-top: 25px;
+            }
+        }
+    }
+}

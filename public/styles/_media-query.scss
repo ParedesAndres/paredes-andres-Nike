@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+
+    .phrase{
+        background-color: $color-primary;
+        color: $color-secondary;
+    }
+
+    .first-description {
+        display: block;
+
+        &__image {
+            display: none;
+        }
+
+        .first-description__container {
+            padding: 0;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    .second-description{
+        display: block;
+        background: $color-primary;
+
+        &__image{
+            display: none;
+        }
+
+        .second-description__container{
+            background: $color-primary;
+            padding: 0;
+            margin: auto;
+            text-align: center;
+
+            .second-description__container__title{
+                color: $color-secondary;
+            }
+
+            .second-description__container__info{
+                color: $color-secondary;
+            }
+        }
+    }
+}

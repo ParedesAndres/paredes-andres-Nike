@@ -1,0 +1,95 @@
+.nav {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    padding: 0 100px 0 100px;
+
+    &__container {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            height: auto;
+            padding-right: 20px;
+            cursor: pointer;
+        }
+
+        &__list {
+            display: flex;
+
+            &__item {
+                font-family: trade-gothic-bold-condensed;
+                font-size: $font-size-nav-container-list-item;
+                color: white;
+                list-style-type: none;
+                padding-left: $padding-nav-container-list-item;
+                padding-right: $padding-nav-container-list-item;
+                cursor: pointer;
+            }
+
+            &__item:hover {
+                color: $color-primary;
+                background: $color-secondary;
+                transition: 2s;
+                -webkit-transition: All 1s ease-out;
+            }
+        }
+    }
+}
+
+.main-header {
+    height: $screen-height;
+    padding: 200px 0;
+    background-image: url("../images/image-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+    &__container {
+        width: $screen-width;
+        padding: 0 100px;
+
+        &__title {
+            font-family: trade-gothic-bold-condensed;
+            font-size: 70px;
+            line-height: 70px;
+            color: $color-secondary;
+        }
+
+        &__slogan {
+            font-family: trade-gothic;
+            font-size: $text-size;
+            color: $color-secondary;
+            margin-top: $margin-main-header-container-slogan;
+            margin-bottom: $margin-main-header-container-slogan;
+        }
+
+        &__button {
+            font-family: trade-gothic-bold-condensed;
+            font-size: $text-size-button;
+            padding: 20px 80px 20px 80px;
+            background-color:red;
+
+            border: none;
+            cursor: pointer;
+
+            &__a:link{
+                cursor: pointer;
+                color: $color-primary;
+                text-decoration: none;
+                background-color: red;
+            }
+        }
+
+        &__button:hover{
+            background-color: $acent-color;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+            transition: 1s;
+        }
+    }
+}

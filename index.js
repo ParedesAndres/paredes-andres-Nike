@@ -34,6 +34,12 @@ app.set('view engine', 'handlebars');
 
 var boots = require('./boots');
 
+app.get('/', (req, res) =>{
+
+    res.render('index');
+});
+
+
 app.get('/store', (req, res) => {
 
     const collection = db.collection('products');

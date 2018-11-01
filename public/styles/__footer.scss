@@ -1,0 +1,42 @@
+.footer {
+    background: $color-primary;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .footer-container__list {
+            padding-left: 50px;
+            padding-right: 50px;
+
+            .footer-container__list__title {
+                font-family: trade-gothic-bold-condensed;
+                font-size: 15pt;
+                color: $color-secondary;
+            }
+
+            .footer-container__list__nav {
+                .footer-container__list__nav__item {
+                    color: #63625F;
+                    font-family: trade-gothic;
+                    list-style-type: none;
+                }
+            }
+        }
+
+        .footer-container__social {
+            justify-self: end;
+        }
+
+       
+    }
+    .footer-copyright{
+        color: $color-secondary;
+        font-family: trade-gothic;
+        padding-top: 50px;
+        padding-left: 100px;
+    }
+}
