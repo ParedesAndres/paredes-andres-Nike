@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Your Cart</title>
+    <title>Nike | My Cart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/main.css" />
     <link rel="icon" href="/img/nike-favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    
+
+    {{>nav}}
+
+    <main>
+        <h1>MY CART</h1>
+
+        <hr>
+
+        <div class="main-container-cart">
+            <section class="shipping-section">
+                <p class="shipping-section__shipping-title">SHIPPING</p>
+
+                <input class="shipping-section__input" type="text" placeholder="NAME">
+                <input class="shipping-section__input" type="text" placeholder="ADDRESS">
+                <input class="shipping-section__input" type="text" placeholder="IDENTIFICATION CARD">
+
+                <p class="shipping-section__shipping-title">PAYMENT</p>
+
+                <input class="shipping-section__input" type="text" placeholder="CARD NUMBER">
+                <div class="shipping-section__info">
+                    <input class="shipping-section__info__input" type="text" placeholder="MM/YY">
+                    <input class="shipping-section__info__input" type="text" placeholder="CVV">
+                </div>
+            </section>
+
+
+
+            <section class="summary-section">
+                <p class="summary-section__summary-title">SUMMARY</p>
+
+                <div class="summary-section__container">
+                    <section class="summary-section__container__left__info">
+                        <p class="summary-section__container__left__info">SHIPPING COSTS</p>
+                        <p class="summary-section__container__left__info">ESTIMATED TAX</p>
+                        <p class="summary-section__container__left__info">PRODUCTS</p>
+
+                        <h3 class="summary-section__container__left__info"><strong>TOTAL</strong></h3>
+                    </section>
+
+                    <section class="summary-section__container__right__info">
+                        <p class="summary-section__container__right__info"><strong>$0</strong></p>
+                        <p class="summary-section__container__right__info"><strong>$0</strong></p>
+                        <p class="summary-section__container__right__info"><strong>$0</strong></p>
+
+                        <h3 class="summary-section__container__left__info"><strong>$0</strong></h3>
+                    </section>
+                </div>
+
+                <div></div>
+
+                <button class="summary-section__button">MAKE A PAYMENT</button>
+            </section>
+        </div>
+    </main>
+
 </body>
+
 </html>

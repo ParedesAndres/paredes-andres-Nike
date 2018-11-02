@@ -85,6 +85,8 @@ app.get('/store/:product', (req, res) => {
     
         var context = {
             img: obj[0].img,
+            desc: obj[0].desc,
+            price: obj[0].price,
             title: req.params.product,
         }       
         
@@ -97,6 +99,11 @@ app.get('/store/:product', (req, res) => {
     
 
 
+});
+
+app.get('/cart', (req, res) =>{
+
+    res.render('cart');
 });
 
 app.listen(5500);

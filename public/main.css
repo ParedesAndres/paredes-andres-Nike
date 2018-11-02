@@ -305,4 +305,99 @@ main .filter-container__collection__checkbox {
   padding: 10px 0;
   cursor: pointer;
 }
+
+.main-container-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main-container-cart .shipping-section {
+  width: 50%;
+}
+
+.main-container-cart .shipping-section__shipping-title {
+  font-family: trade-gothic-bold-condensed;
+  color: black;
+  margin: 15px 0;
+}
+
+.main-container-cart .shipping-section__input {
+  font-family: trade-gothic-bold-condensed;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  display: block;
+  margin: 10px 0;
+  width: 90%;
+}
+
+.main-container-cart .shipping-section__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.main-container-cart .shipping-section__info__input {
+  font-family: trade-gothic-bold-condensed;
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0;
+  width: 45%;
+}
+
+.main-container-cart .summary-section {
+  width: 50%;
+  padding-left: 10%;
+}
+
+.main-container-cart .summary-section__summary-title {
+  font-family: trade-gothic-bold-condensed;
+  color: black;
+  margin: 15px 0;
+}
+
+.main-container-cart .summary-section__container {
+  border: 1px solid #828282;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.main-container-cart .summary-section__container__left {
+  width: 50%;
+}
+
+.main-container-cart .summary-section__container__left__info {
+  font-family: trade-gothic-light-oblique;
+  color: black;
+  margin: 15px 15px;
+}
+
+.main-container-cart .summary-section__container__right {
+  width: 50%;
+}
+
+.main-container-cart .summary-section__container__right__info {
+  font-family: trade-gothic-bold;
+  color: black;
+  margin: 15px 15px;
+}
+
+.main-container-cart .summary-section__button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: trade-gothic-bold-condensed;
+  font-size: 21pt;
+  border: none;
+  padding: 10px 0;
+  margin-top: 15px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */

@@ -116,10 +116,15 @@
   font-family: trade-gothic-bold-condensed;
   font-size: 25px;
   padding: 20px 80px 20px 80px;
-  color: #000000;
-  background-color: #ffffff;
+  background-color: white;
   border: none;
   cursor: pointer;
+}
+
+.main-header__container__button__a:link {
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
 }
 
 .main-header__container__button:hover {
