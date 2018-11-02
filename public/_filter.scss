@@ -58,27 +58,63 @@ main {
                 border-radius: 50%;
             }
 
-            .button1{background-color: black};
-            .button2{background-color: #c1c5c8};
-            .button3{background-color: #dbaa1d};
-            .button4{background-color: #5b232e};
-            .button5{background-color: #ff3b3b};
+            .button1 {
+                background-color: black
+            }
+
+            ;
+
+            .button2 {
+                background-color: #c1c5c8
+            }
+
+            ;
+
+            .button3 {
+                background-color: #dbaa1d
+            }
+
+            ;
+
+            .button4 {
+                background-color: #5b232e
+            }
+
+            ;
+
+            .button5 {
+                background-color: #ff3b3b
+            }
+
+            ;
         }
 
-        &__collection{
-            &__title{
+        &__collection {
+            &__title {
                 font-family: trade-gothic-bold-condensed;
                 color: black;
                 margin-bottom: 15px;
             }
 
-            &__checkbox{
-                background-color: transparent;
+            &__input {
+                font-family: trade-gothic-bold-condensed;
+                font-size: 15px;
+                padding: 8px;
+            }
+
+            &__button {
                 
+                background-color: black;
+                color: white;
+                font-family: trade-gothic-bold-condensed;
+                font-size: 10t;
+                border: none;
+                padding: 8px;
+                cursor: pointer;
             }
         }
     }
 
-   
+
 
 }

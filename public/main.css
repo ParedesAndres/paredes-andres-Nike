@@ -164,8 +164,20 @@ main .filter-container__collection__title {
   margin-bottom: 15px;
 }
 
-main .filter-container__collection__checkbox {
-  background-color: transparent;
+main .filter-container__collection__input {
+  font-family: trade-gothic-bold-condensed;
+  font-size: 15px;
+  padding: 8px;
+}
+
+main .filter-container__collection__button {
+  background-color: black;
+  color: white;
+  font-family: trade-gothic-bold-condensed;
+  font-size: 10t;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .product-container {
