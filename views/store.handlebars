@@ -23,7 +23,11 @@
         <section class="filter-container">
             <section class="filter-container__price">
                 <p class="filter-container__price__title">PRICE</p>
-                <input type="range" id="price" min="190" max="390" class="filter-container__price__range">
+                <form action="/store" method="GET">
+                    <input type="range" name="price" id="price" min="156" max="339" class="filter-container__price__range">
+                    <!--<button type="submit">Filtar</button>-->
+                </form>
+
             </section>
 
             <section class="filter-container__color">
@@ -37,24 +41,35 @@
 
             <section class="filter-container__collection">
                 <p class="filter-container__collection__title">COLLECTIONS</p>
-                <input class="filter-container__collection__checkbox" type="checkbox" id="Mercurial">
+                <!--<input class="filter-container__collection__checkbox" type="checkbox" id="Mercurial">
                 <label for="Mercurial">Mercurial</label>
 
                 <input type="checkbox" id="Academy">
-                <label for="Academy">Academy</label>
+                <label for="Academy">Academy</label>-->
+
+                <form action="/store" method="GET">
+                    <select name="collec">
+                        <option value="Mercurial">Mercurial</option>
+                        <option value="Academy">Academy</option>
+                        
+                    </select>
+                    <button type="submit">Filtar</button>
+                </form>
             </section>
         </section>
 
         <section class="product-container">
             {{#each boots}}
-                <article class="product-container__product">
-                    <img class="product-container__product__img" src="{{img}}" alt="image">
-                    <button class="product-container__product__color" style="background: {{color}}"></button>
-                    <hr>
-                    <a href="/store/{{name}}"><h3 class="product-container__product__title">{{name}}</h3></a>
-                    <p class="product-container__product__category">{{collection}}</p>
-                    <p class="product-container__product__price">${{price}}.00</p>
-                </article>
+            <article class="product-container__product">
+                <img class="product-container__product__img" src="{{img}}" alt="image">
+                <button class="product-container__product__color" style="background: {{color}}"></button>
+                <hr>
+                <a href="/store/{{name}}">
+                    <h3 class="product-container__product__title">{{name}}</h3>
+                </a>
+                <p class="product-container__product__category">{{collection}}</p>
+                <p class="product-container__product__price">${{price}}.00</p>
+            </article>
             {{/each}}
         </section>
 
